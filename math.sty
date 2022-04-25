@@ -1,0 +1,27 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{examplepackage}[2014/08/21 Example package]
+
+
+\RequirePackage{asmfonts}
+\RequirePackage{amssymb}
+\RequirePackage{amsmath}
+
+% Proofs/Theorems 
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+
+% Black Board Fonts 
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\H}{\ensuremath{\mathbb{H}}}
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\mtoz}{\ensuremath{M_2(\Z)}}
+
+% Integers mod 
+\newcommand{\Zm}[1]{\ensuremath{\mathbb{Z}/#1\mathbb{Z}}}
+% Equivalence Class for integers mod
+\renewcommand{\b}[1]{\ensuremath{\overline{#1}}}
+
+
