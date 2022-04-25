@@ -1,0 +1,29 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{stats}[2022/04/25 stats]
+
+% Proofs/Theorems 
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+
+% Black Board Fonts 
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\A}{\alpha}
+\newcommand{\B}{\beta}
+
+% Stats Notations
+\newcommand{\smean}{\ensuremath{\overline{X_n}}}
+\newcommand{\svar}{\ensuremath{{S^2_n}}}
+
+% Convergence in probability
+\newcommand{\probarrow}{ \xrightarrow{\text{   d   }}}
+
+% Some critical values which are frequently used
+\newcommand{\za}{\ensuremath{z_\A}}
+\newcommand{\za2}{\ensuremath{z_{\frac{\A}{2}}}}
+
+% Calc Content
+\newcommand{\deriv}[1]{\ensuremath{\frac{d}{d#1}}}
+\newcommand{\derivD}[1]{\ensuremath{\frac{d^2}{d^2#1}}}
